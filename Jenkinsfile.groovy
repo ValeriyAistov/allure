@@ -8,6 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
+                bat 'cd C:\\Users\\aistov\\IdeaProjects\\allure'
                 bat 'mvn clean test'
             }
         }
